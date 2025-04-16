@@ -1,0 +1,25 @@
+body {
+  background-color: antiquewhite;
+  text-align: center;
+  margin: 5px;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio */
+  gap: 1em; /* Equivalente a grid-gap */
+  background-color: brown;
+  margin: 10px;
+}
+
+.contenedor > div {
+  background-color: rgb(158, 159, 146);
+  color: beige;
+  margin: 5px;
+  padding: 10px;
+  border: 5px solid rgb(150, 80, 80);
+  /* Los elementos se distribuirán automáticamente en filas */
+  /* Si quieres un comportamiento similar a las 3 columnas iniciales, */
+  /* puedes establecer un ancho base para los elementos */
+  /* flex-basis: calc(33.33% - 1.6em); /* (100% / 3) - (gap / 3) */
+  /* Esto intentará mantener aproximadamente 3 elementos por fila */
+}
